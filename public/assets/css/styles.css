@@ -1,0 +1,234 @@
+/* °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+MAIN
+HEADER
+BANNIERE
+ABOUT
+OVERLAY
+PRODUCTS
+
+FOOTER
+---------
+PAGE CONNEXION
+ACOUNT
+PORTFEUILLE
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
+
+/* °°°°°°°°°°°°°°°°°° MAIN °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° 
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #e9e6dc;
+    color: #422f2d;
+}
+
+ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ****************************************************
+HEADER
+**************************************************** */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background: dimgrey;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.sticky {
+  background-color: #ffffff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sticky .logo {
+  color: #422f2d;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+ul li i {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.sticky ul li a {
+  color: #422f2d;
+}
+.sticky ul li i {
+  color: #422f2d;
+}
+
+
+
+/* ****************************************************
+ACOUNT
+**************************************************** */
+/************** HIDE *****************/
+
+.login {
+  display: flex;
+  margin-top: 100px;
+}
+.infoProduct {
+  display: none;
+  padding-top: 110px;
+}
+.favories {
+  display: none;
+  padding-top: 110px;
+}
+.portfeuil {
+  display: none;
+  padding-top: 110px;
+}
+
+/******************************************************/
+.nav-JS {
+  /*top: 130px;
+      left: 10%;
+      right: 10%;
+      position: absolute;*/
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 35px;
+  box-shadow: -10px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.nav-JS ul {
+  display: flex;
+  justify-content: center;
+}
+.nav-JS ul li {
+  text-align: center;
+  list-style: none;
+  margin-left: 80px;
+}
+.nav-JS a {
+  text-decoration: none;
+  color: #422f2d;
+}
+.nav-JS a:hover {
+  color: #422f2d;
+  text-decoration: underline;
+}
+
+.active {
+  color: #422f2d;
+  background-color: grey;
+  padding: 15px;
+}
+
+/******************************************************/
+.login .justify {
+  padding: 65px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.infoProduct .contentBx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.infoProduct .content {
+  background-color: rgba(255, 255, 255);
+  box-shadow: -10px 2px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 500px;
+}
+
+.contentBx > table {
+  border: 2px solid #422f2d;
+  padding: 15px;
+}
+
+table td {
+  padding: 0 10px;
+}
+
+table .bold:nth-child(1) {
+  font-weight: 800;
+}
+
+.favories .contentBx {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  box-shadow: -10px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/******************************************
+PORTFEUILLE
+******************************************/
+.portfeuil .contentBx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.portfeuil .content {
+  background-color: rgba(255, 255, 255);
+  box-shadow: -10px 2px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 500px;
+}
+
+.portfeuil button {
+  border: 0;
+  padding: 5px 10px;
+  margin: 10px;
+  color: white;
+  background-color: #422f2d;
+}
+.portfeuil button:hover {
+  background-color: #422f2dc0;
+}
