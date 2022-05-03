@@ -8,22 +8,66 @@
         
         <title>{%title%}</title>
         
-        <link rel="stylesheet" href="./public/assets/css/styles.css">
+        <link type="text/css" rel="stylesheet" href="./public/assets/css/styles.css">
   
-        <link rel="icon" type="image/x-icon" href="./public/assets/#">
+        <link rel="icon" type="image/x-icon" href="./public/assets/img/icon-bibliotheque.jpg">
 
         <script src="https://kit.fontawesome.com/8f6b316922.js" crossorigin="anonymous"></script>
     </head>
-    
-    <header>
-    <a href="./index.php" class="logo">Ma Bibliothèque</a>
-    <div class="toggle">
-        <ul>
-            <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./index.php?url=profile">Profile</a></li>
-            <li><a href="./index.php?url=register">Inscription</a></li>
-            <li><a href="./index.php?url=login">Connexion</a></li>
-            <li><a href="./index.php?url=cart"><i class="fas fa-shopping-basket"></i>Mon panier</a></li>
-        </ul>
-    </div>
-    </header>
+
+    <body>
+        
+        <header class="header">
+            <a href="./index.php" class="header">Ma Bibliothèque</a>
+            <div class="abo">
+                <div>
+                    <label for="email">E-mail :</label> <input id="email" name="subscriber_email" type="email" title="renseignez votre adresse mail ici"/>
+                </div>
+                <div>
+                    <label for="lastname">Nom :</label> <input id="lastname" name="subscriber_last_name" type="text" />
+                </div>
+                <div>
+                    <label for="firstname">Pr&eacute;nom :</label> <input id="firstname" name="subscriber_first_name" type="text" /> 
+                </div>
+                <div>
+                    <!-- voir cette histoire de caracteres speciaux W3C -->
+                    <button type="submit">S&#39;abonner &agrave; la newsletter</button>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.php" title="cliquez pour revenir à la page principale">Accueil</a></li>
+                    <li><a href="./index.php?url=profile">Profile</a></li>
+                    <li><a href="./index.php?url=register" target="_blank" title="inscription rapide et gratuite!">Inscription</a></li>
+                    <li><a href="./index.php?url=login">Connexion</a></li>
+                    <li><a href="./index.php?url=cart"><i class="fas fa-shopping-basket"></i>Mon panier</a></li>
+                </ul>
+            </div>
+            <!-- / section recherche à approfondir -->
+            <div class="find">
+                <label for="site-search">Rechercher un livre:</label>
+                <input type="search" id="site-search" name="q">
+                <button>Search</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="lastUpdate">
+
+            </section>
+            <section class="top3">
+
+            </section>
+            <section class="librairy">
+
+            </section>
+        </main>
+
+        <footer class="footer">
+            <li><a href="mailto:contact@mabibliotheque.fr">écrivez moi!</a></li>
+
+        </footer>
+
+    </body>
+
+</html> 
